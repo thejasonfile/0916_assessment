@@ -1,4 +1,4 @@
-const customer = (function(){
+const Customer = (function(){
 
   let customers = [];
 
