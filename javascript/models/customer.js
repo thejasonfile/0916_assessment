@@ -1,16 +1,18 @@
-function(){
+const customer = (function(){
 
   let customers = [];
 
-  return class Customer{
+    return class Customer{
+      constructor(){
 
-    constructor(){
+      }
 
-    }
+      all(){
+        customers.push(this);
+      }
 
-    all(){
-
-    }
+      hey(){
+        return console.log('hey')
+      }
   }
-
-}
+})()
