@@ -1,18 +1,30 @@
 const Customer = (function(){
 
-  let customers = [];
+  let all = [];
 
     return class Customer{
-      constructor(){
+      constructor(name){
+        this.name = name;
+        all.push(this);
+      }
+
+      showAll(){
+        return all;
+      }
+
+      findByName(name){
 
       }
 
-      all(){
-        customers.push(this);
+      addReview(text, restaurant){
+
       }
 
-      hey(){
-        return console.log('hey')
+      addRestaurant(name){
+
       }
   }
 })()
+
+var jason = new Customer('jason');
+var katie = new Customer('katie');
