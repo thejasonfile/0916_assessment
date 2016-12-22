@@ -5,6 +5,10 @@ const Restaurant = (function(){
         this.name = name;
       }
 
+      findByName(){
+        
+      }
+
       customers(){
 
       }
