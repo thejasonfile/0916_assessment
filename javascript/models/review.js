@@ -1,8 +1,10 @@
 const Review = (function(){
 
     return class Review{
-      constructor(name){
-        this.name = name;
+
+      constructor(text){
+        this.text = text;
+        all[0].reviews.push(this);
       }
 
       customer(){

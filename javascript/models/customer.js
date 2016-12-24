@@ -1,30 +1,25 @@
-const Customer = (function(){
+let all = [{customers: [], restaurants: [], reviews: []}]
 
-  let all = [];
+const Customer = (function(){
 
     return class Customer{
       constructor(name){
         this.name = name;
-        all.push(this);
-      }
-
-      showAll(){
-        return all;
+        all[0].customers.push(this);
       }
 
       findByName(name){
-
+        all[0].customers.filter(function(customer){
+          return customer.name === name;
+        })
       }
 
-      addReview(text, restaurant){
-
+      addReview(text){
+        new Review(text)
       }
 
       addRestaurant(name){
-
+        new Restaurant(name)
       }
   }
 })()
-
-var jason = new Customer('jason');
-var katie = new Customer('katie');
