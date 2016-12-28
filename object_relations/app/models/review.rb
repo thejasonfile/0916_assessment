@@ -5,6 +5,7 @@ class Review
   @@all = []
 
   def initialize(text)
+#     could allow to pass through restaurant and customer objects into initialize
     @text = text
     @restaurant = nil
     @customer = nil
