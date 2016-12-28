@@ -32,7 +32,9 @@ class Customer
     review = Review.new(text)
     review.customer = self
     review.restaurant = add_restaurant(restaurant_name)
+#     Review.new(text, customer, restaurant)
     self.reviews << review
+#     this is the same return value as add_restaurant(restaurant_name).
     restaurant = Restaurant.all.find do |restaurant|
       restaurant.name == restaurant_name
     end
