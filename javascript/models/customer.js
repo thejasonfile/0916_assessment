@@ -1,5 +1,6 @@
 let all = [{customers: [], restaurants: [], reviews: []}]
-
+// all = {customers: [], restaurants: [], reviews: []}
+// don't make it harder on yourself.
 const Customer = (function(){
 
     return class Customer{
