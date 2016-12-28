@@ -26,6 +26,8 @@ class Restaurant
   end
 
   def reviews
+#     for the reviews, you should probably iterate through all of the reviews, and then find the one with who has as the restaurant 
+#     the current object.
     @reviews
   end
 
